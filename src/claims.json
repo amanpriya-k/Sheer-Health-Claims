@@ -1,0 +1,272 @@
+[
+  {
+    "ID": "38bdaac4-4902-4618-a5ed-c976f94af309",
+    "DateOfService": "2022-03-12",
+    "ProviderName": "Elaina Strosin",
+    "Location": "Mt. Sinai",
+    "Services": [
+      {
+        "Name": "Surgery",
+        "PatientResponsibility": 15.34,
+        "PayerResponsibility": 14.58
+      },
+      {
+        "Name": "X-Ray",
+        "PatientResponsibility": 93.51,
+        "PayerResponsibility": 869.02
+      },
+      {
+        "Name": "MRI",
+        "PatientResponsibility": 68.29,
+        "PayerResponsibility": 94.58
+      },
+      {
+        "Name": "X-Ray",
+        "PatientResponsibility": 16.13,
+        "PayerResponsibility": 252.57
+      },
+      {
+        "Name": "X-Ray",
+        "PatientResponsibility": 51.63,
+        "PayerResponsibility": 220.12
+      }
+    ],
+    "InNetwork": true,
+    "Status": "denied",
+    "PatientResponsibility": 244.9
+  },
+  {
+    "ID": "711f0ec0-7069-4353-ab85-4de5eafa2d43",
+    "DateOfService": "2022-08-17",
+    "ProviderName": "Alf Rogahn",
+    "Location": "NYU Langone",
+    "Services": [
+      {
+        "Name": "MRI",
+        "PatientResponsibility": 14.63,
+        "PayerResponsibility": 621.04
+      },
+      {
+        "Name": "Surgery",
+        "PatientResponsibility": 14.87,
+        "PayerResponsibility": 359.05
+      }
+    ],
+    "InNetwork": false,
+    "Status": "unsubmitted",
+    "PatientResponsibility": 29.5
+  },
+  {
+    "ID": "4ce4be08-f36a-43e4-b8fb-959d63143f8b",
+    "DateOfService": "2022-04-03",
+    "ProviderName": "Alf Grant",
+    "Location": "Atlantic Health Services",
+    "Services": [
+      {
+        "Name": "Blood Test",
+        "PatientResponsibility": 41.83,
+        "PayerResponsibility": 605.42
+      },
+      {
+        "Name": "Surgery",
+        "PatientResponsibility": 90.22,
+        "PayerResponsibility": 829.69
+      },
+      {
+        "Name": "X-Ray",
+        "PatientResponsibility": 69.8,
+        "PayerResponsibility": 409.53
+      },
+      {
+        "Name": "Blood Test",
+        "PatientResponsibility": 5.45,
+        "PayerResponsibility": 723.98
+      },
+      {
+        "Name": "CT Scan",
+        "PatientResponsibility": 45.26,
+        "PayerResponsibility": 287.93
+      }
+    ],
+    "InNetwork": true,
+    "Status": "unsubmitted",
+    "PatientResponsibility": 252.56
+  },
+  {
+    "ID": "1fc33f52-0d7e-4012-bb77-996d2e34c379",
+    "DateOfService": "2023-01-01",
+    "ProviderName": "Aubrey Schiller",
+    "Location": "NYU Langone",
+    "Services": [
+      {
+        "Name": "Physical Therapy",
+        "PatientResponsibility": 10.6,
+        "PayerResponsibility": 516.56
+      },
+      {
+        "Name": "Surgery",
+        "PatientResponsibility": 20.75,
+        "PayerResponsibility": 677.59
+      },
+      {
+        "Name": "MRI",
+        "PatientResponsibility": 92.55,
+        "PayerResponsibility": 604.95
+      }
+    ],
+    "InNetwork": true,
+    "Status": "paid",
+    "PatientResponsibility": 123.9
+  },
+  {
+    "ID": "adf006dc-2f36-4f85-a5ed-4894f7d41b27",
+    "DateOfService": "2022-06-04",
+    "ProviderName": "Stefan Borer",
+    "Location": "NYU Langone",
+    "Services": [
+      {
+        "Name": "CT Scan",
+        "PatientResponsibility": 7.35,
+        "PayerResponsibility": 656.55
+      }
+    ],
+    "InNetwork": true,
+    "Status": "unsubmitted",
+    "PatientResponsibility": 7.35
+  },
+  {
+    "ID": "242d3a1c-9a94-4af0-bb71-160d1d7c15c4",
+    "DateOfService": "2023-01-06",
+    "ProviderName": "Fredrick Hilll",
+    "Location": "Atlantic Health Services",
+    "Services": [
+      {
+        "Name": "CT Scan",
+        "PatientResponsibility": 12.98,
+        "PayerResponsibility": 608.55
+      },
+      {
+        "Name": "Physical Therapy",
+        "PatientResponsibility": 62.09,
+        "PayerResponsibility": 121.55
+      }
+    ],
+    "InNetwork": true,
+    "Status": "paid",
+    "PatientResponsibility": 75.07000000000001
+  },
+  {
+    "ID": "fe261771-2181-4f86-b42c-d87a9f07b1c0",
+    "DateOfService": "2022-05-31",
+    "ProviderName": "Joy Mayert",
+    "Location": "Mt. Sinai",
+    "Services": [
+      {
+        "Name": "Blood Test",
+        "PatientResponsibility": 60.41,
+        "PayerResponsibility": 551.53
+      },
+      {
+        "Name": "Physical Therapy",
+        "PatientResponsibility": 26.1,
+        "PayerResponsibility": 756.22
+      }
+    ],
+    "InNetwork": false,
+    "Status": "paid",
+    "PatientResponsibility": 86.50999999999999
+  },
+  {
+    "ID": "23a8f8ca-2853-48ab-a6c3-8d662f9e7bb8",
+    "DateOfService": "2022-10-27",
+    "ProviderName": "Nicklaus Deckow",
+    "Location": "NYU Langone",
+    "Services": [
+      {
+        "Name": "CT Scan",
+        "PatientResponsibility": 34.38,
+        "PayerResponsibility": 879.5
+      },
+      {
+        "Name": "Physical Therapy",
+        "PatientResponsibility": 41.64,
+        "PayerResponsibility": 755.1
+      },
+      {
+        "Name": "Blood Test",
+        "PatientResponsibility": 31.66,
+        "PayerResponsibility": 185.13
+      }
+    ],
+    "InNetwork": false,
+    "Status": "denied",
+    "PatientResponsibility": 107.68
+  },
+  {
+    "ID": "0706f376-c66d-452e-80de-7745714da043",
+    "DateOfService": "2022-04-29",
+    "ProviderName": "Alan Quigley",
+    "Location": "Atlantic Health Services",
+    "Services": [
+      {
+        "Name": "Physical Therapy",
+        "PatientResponsibility": 80.9,
+        "PayerResponsibility": 438.13
+      },
+      {
+        "Name": "Physical Therapy",
+        "PatientResponsibility": 56.2,
+        "PayerResponsibility": 282.28
+      },
+      {
+        "Name": "Blood Test",
+        "PatientResponsibility": 73.13,
+        "PayerResponsibility": 910.7
+      }
+    ],
+    "InNetwork": false,
+    "Status": "denied",
+    "PatientResponsibility": 210.23000000000002
+  },
+  {
+    "ID": "48f81ffe-dfc7-4e71-9df7-becbfb05edd8",
+    "DateOfService": "2022-08-13",
+    "ProviderName": "Mathew Jakubowski",
+    "Location": "NYU Langone",
+    "Services": [
+      {
+        "Name": "CT Scan",
+        "PatientResponsibility": 85.36,
+        "PayerResponsibility": 191.18
+      },
+      {
+        "Name": "Surgery",
+        "PatientResponsibility": 41.49,
+        "PayerResponsibility": 224.36
+      },
+      {
+        "Name": "Blood Test",
+        "PatientResponsibility": 94.45,
+        "PayerResponsibility": 957.68
+      },
+      {
+        "Name": "Physical Therapy",
+        "PatientResponsibility": 1.95,
+        "PayerResponsibility": 908.04
+      },
+      {
+        "Name": "CT Scan",
+        "PatientResponsibility": 7.21,
+        "PayerResponsibility": 831.52
+      },
+      {
+        "Name": "CT Scan",
+        "PatientResponsibility": 21.53,
+        "PayerResponsibility": 631.86
+      }
+    ],
+    "InNetwork": false,
+    "Status": "paid",
+    "PatientResponsibility": 251.99
+  }
+]
