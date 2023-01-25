@@ -13,7 +13,7 @@ function App() {
           alt='Sheer Health Logo'
         ></img>
       </header>
-      <Router>
+      <Router basename='/Sheer-Health-Claims'>
         <Routes>
           <Route path='/' element={<Navigate to='/claims' />} />
           <Route path='/claims' element={<ClaimsList />} />
