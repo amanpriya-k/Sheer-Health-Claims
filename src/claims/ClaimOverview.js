@@ -75,12 +75,14 @@ function ClaimOverview() {
                 }}
               ></img>
             </div>
-            <button
-              className={`bg-violet-400 hover:bg-violet-200 text-lg text-white font-bold py-2 px-4 w-60 h-15 rounded-full transition-all text-center my-6`}
-              onClick={() => alert('We are working on processing your request!')}
-            >
-              {Status === 'denied' ? 'Appeal Claim' : 'Submit Claim'}
-            </button>
+            {Status !== 'paid' && (
+              <button
+                className={`bg-violet-400 hover:bg-violet-200 text-lg text-white font-bold py-2 px-4 w-60 h-15 rounded-full transition-all text-center my-6`}
+                onClick={() => alert('We are working on processing your request!')}
+              >
+                {Status === 'denied' ? 'Appeal Claim' : 'Submit Claim'}
+              </button>
+            )}
           </div>
         </div>
         <hr></hr>
