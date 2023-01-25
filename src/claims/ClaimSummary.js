@@ -1,5 +1,7 @@
 import React from 'react';
-import { format, parseISO } from 'date-fns';
+import { Link } from 'react-router-dom';
+import { formatClaimStatus, getStatusColor } from '../utils/claimStatusFormatting';
+import { formatDate } from '../utils/dateFormatting';
 
 function ClaimSummary({ claimInfo }) {
   return (
@@ -10,11 +12,12 @@ function ClaimSummary({ claimInfo }) {
       <div className='w-40'>{claimInfo.ProviderName}</div>
       <div className='w-40'>{`$${claimInfo.PatientResponsibility.toFixed(2)}`}</div>
 
-      <button
-        className={`bg-violet-400 hover:bg-violet-200 text-white font-bold py-2 px-4 w-40 rounded-full transition-all`}
+      <Link
+        className={`bg-violet-400 hover:bg-violet-200 text-white font-bold py-2 px-4 w-40 rounded-full transition-all text-center`}
+        to={`/claims/${claimInfo.ID}`}
       >
         Manage Claim
-      </button>
+      </Link>
     </div>
   );
 }
@@ -22,31 +25,9 @@ function ClaimSummary({ claimInfo }) {
 export default ClaimSummary;
 
 function ClaimStatusItem(status) {
-  let formattedStatusText = '';
-  let textColor = 'text-gray-600';
-  switch (status) {
-    case 'denied':
-      formattedStatusText = 'Denied';
-      textColor = 'text-red-700';
-      break;
-    case 'unsubmitted':
-      formattedStatusText = 'Not Submitted';
-      break;
-    case 'paid':
-      formattedStatusText = 'Approved';
-      textColor = 'text-green-700';
-      break;
-    case 'pending':
-      formattedStatusText = 'Pending';
-      break;
-    default:
-      break;
-  }
+  let formattedStatusText = formatClaimStatus(status);
+  let textColor = getStatusColor(status);
 
   const claimStatusStyle = `font-bold w-40 ${textColor}`;
   return <div className={claimStatusStyle}>{formattedStatusText}</div>;
-}
-
-function formatDate(date) {
-  return format(new Date(parseISO(date)), 'PPP');
 }

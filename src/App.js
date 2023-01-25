@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import ClaimOverview from './claims/ClaimOverview';
 import ClaimsList from './claims/ClaimsList';
 
 function App() {
@@ -12,7 +13,13 @@ function App() {
           alt='Sheer Health Logo'
         ></img>
       </header>
-      <ClaimsList></ClaimsList>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Navigate to='/claims' />} />
+          <Route path='/claims' element={<ClaimsList />} />
+          <Route path='/claims/:claimId' element={<ClaimOverview />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
