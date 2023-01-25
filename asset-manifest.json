@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Sheer-Health-Claims/static/css/main.5384a01b.css",
-    "main.js": "/Sheer-Health-Claims/static/js/main.104a305e.js",
+    "main.js": "/Sheer-Health-Claims/static/js/main.a36b588d.js",
     "static/js/787.874c17b9.chunk.js": "/Sheer-Health-Claims/static/js/787.874c17b9.chunk.js",
     "static/media/questionmark.png": "/Sheer-Health-Claims/static/media/questionmark.64ed3cafbc1abeb8ae4f.png",
     "index.html": "/Sheer-Health-Claims/index.html",
     "main.5384a01b.css.map": "/Sheer-Health-Claims/static/css/main.5384a01b.css.map",
-    "main.104a305e.js.map": "/Sheer-Health-Claims/static/js/main.104a305e.js.map",
+    "main.a36b588d.js.map": "/Sheer-Health-Claims/static/js/main.a36b588d.js.map",
     "787.874c17b9.chunk.js.map": "/Sheer-Health-Claims/static/js/787.874c17b9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5384a01b.css",
-    "static/js/main.104a305e.js"
+    "static/js/main.a36b588d.js"
   ]
 }
