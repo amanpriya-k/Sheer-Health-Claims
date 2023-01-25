@@ -278,7 +278,7 @@ function ClaimsList() {
   return (
     <div className='flex flex-col'>
       {claimsList.map(function (item) {
-        return <ClaimSummary claimInfo={item} key={item}></ClaimSummary>;
+        return <ClaimSummary claimInfo={item} key={item.ID}></ClaimSummary>;
       })}
     </div>
   );
