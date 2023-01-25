@@ -1,8 +1,6 @@
 import React from 'react';
 import { format, parseISO } from 'date-fns';
 
-const claimInfoBoxStyle = 'text-start m-2';
-
 function ClaimStatusItem(status) {
   let formattedStatusText = '';
   let textColor = 'text-gray-600';
@@ -25,7 +23,7 @@ function ClaimStatusItem(status) {
       break;
   }
 
-  const claimStatusStyle = `${claimInfoBoxStyle} ${textColor} font-bold w-40`;
+  const claimStatusStyle = `text-start font-bold w-40 ${textColor}`;
   return <div className={claimStatusStyle}>{formattedStatusText}</div>;
 }
 
@@ -34,31 +32,19 @@ function formatDate(date) {
 }
 
 function ClaimSummary({ claimInfo }) {
-  // ID
-  // Date
-  // Provider
-  // Location
-  // Services (list)
-  // In Network (bool)
-  // Status
-  // Patient Responsibility
   return (
-    <div className='flex justify-left border-solid border-2 border-zinc-300 rounded-lg h-20 w-3/4 my-4 mx-8 px-4'>
-      <div className='flex flex-row w-full justify-left items-center'>
-        <div className={`${claimInfoBoxStyle} w-60`}>{formatDate(claimInfo.DateOfService)}</div>
-        {ClaimStatusItem(claimInfo.Status)}
-        <div className={`${claimInfoBoxStyle} w-60`}>{claimInfo.Location}</div>
-        <div className={`${claimInfoBoxStyle} w-40`}>{claimInfo.ProviderName}</div>
-        <div className={`${claimInfoBoxStyle} w-40`}>{`$${claimInfo.PatientResponsibility.toFixed(
-          2,
-        )}`}</div>
+    <div className='flex flex-row justify-left border-solid border-2 border-zinc-300 rounded-lg h-20 my-4 ml-2 px-4 items-center'>
+      <div className='text-start w-60'>{formatDate(claimInfo.DateOfService)}</div>
+      {ClaimStatusItem(claimInfo.Status)}
+      <div className='text-start w-60'>{claimInfo.Location}</div>
+      <div className='text-start w-40'>{claimInfo.ProviderName}</div>
+      <div className='text-start w-40'>{`$${claimInfo.PatientResponsibility.toFixed(2)}`}</div>
 
-        <button
-          className={`bg-indigo-400 hover:bg-indigo-200 text-white font-bold py-2 px-4 w-40 rounded-full`}
-        >
-          Manage Claim
-        </button>
-      </div>
+      <button
+        className={`bg-indigo-400 hover:bg-indigo-200 text-white font-bold py-2 px-4 w-40 rounded-full`}
+      >
+        Manage Claim
+      </button>
     </div>
   );
 }
